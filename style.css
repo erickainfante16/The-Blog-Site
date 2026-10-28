@@ -1,71 +1,111 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
+
+/* Estilos globales de reset y tipografía */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f9fafb; /* Fondo gris ultra claro */
+    color: #111827;
+    min-height: 100vh;
 }
 
-/* ===============================
-   NAVBAR CONTENEDOR
-   =============================== */
-.navBarr {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+/* Contenedor Principal (Auto Layout vertical de Figma) */
+.contacto-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 24px;
+    text-align: center;
 }
 
-.navBarrContenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Bloque de Cabecera */
+.contacto-header h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.025em;
+    margin-bottom: 12px;
 }
 
-/* ===============================
-   LOGO
-   =============================== */
-.navBarrLogo {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #111827;
-  text-decoration: none;
-  letter-spacing: -0.5px;
-  transition: color 0.3s ease;
+.contacto-header p {
+    font-size: 1.05rem; /* ~17px */
+    color: #4b5563; /* Gris medio */
+    margin-bottom: 48px;
 }
 
-.navBarrLogo:hover {
-  color: #667eea;
+/* Grid de Tarjetas (Fila horizontal que pasa a vertical en móviles) */
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
-/* ===============================
-   MENÚ DE ENLACES
-   =============================== */
-.navBarrMenu {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+/* Diseño de la Tarjeta Individual */
+.contacto-tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-.navBarrMenu {
-  color: #4b5563;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.95rem;
-  padding: 10px 18px;
-  border-radius: 8px;
-  position: relative;
-  transition: all 0.25s ease;
+.contacto-tarjeta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor del Icono */
+.icono-contenedor {
+    background-color: #eff6ff; /* Fondo azul tenue */
+    color: #2563eb; /* Azul de marca */
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icono-contenedor svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Textos dentro de la Tarjeta */
+.tarjeta-contenido h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.contacto-link {
+    font-size: 0.95rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contacto-link:hover {
+    text-decoration: underline;
+}
+
+/* Ocultar títulos de sección que solo sirven para accesibilidad */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
