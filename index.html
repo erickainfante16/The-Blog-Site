@@ -5,26 +5,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roadmap – Full Stack Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100" data-pagina="index">
-  <div id="navbar"></div>
-
   <header class="hero">
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-lg-6 text-center text-lg-start">
           <h1 class="display-5">Full Stack <span>Developer</span></h1>
-          <p class="lead">Las tecnologías de frontend y backend que necesitas conocer para construir aplicaciones web completas.</p>
+          <p class="lead">Las tecnologías de frontend y backend que necesitas conocer para construir aplicaciones web
+            completas.</p>
         </div>
-        <div class="col-lg-6">
-          <img id="foto" src="Pic/full-stack-tenologies.jpeg" class="img-fluid rounded-4 shadow" alt="Tecnologías Full Stack">
         </div>
       </div>
     </div>
   </header>
+  <nav class="border-custom border-bottom-0 py-2">
+    <ul class="nav justify-content-center m-0">
+      <li class="nav-item px-3 border-end border-dark">
+        <a href="index.html" class="nav-link text-red p-0">Inicio</a>
+      </li>
+      <li class="nav-item px-3 border-end border-dark">
+        <a href="QuienesSomos.html" class="nav-link text-dark p-0">¿Quienes somos?</a>
+      </li>
+      <li class="nav-item px-3">
+        <a href="contacto.html" class="nav-link text-dark p-0">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="col-lg-6">
+          <img id="foto" src="Pic/full-stack-tenologies.jpeg" class="img-fluid rounded-4 shadow"
+            alt="Tecnologías Full Stack">
+  <!-- Usamos 'container-fluid' para que ocupe todo el ancho -->
+  <main class="container-fluid p-0 flex-grow-1">
+    <div class="row g-0 min-vh-custom"> <!-- g-0 elimina el espacio entre columnas -->
+
+      <!-- Columna Izquierda: AD (2 de 12 columnas) -->
+      <div class="col-2 bg-light-gray border-custom border-top-0 border-bottom-0 center-text">
 
   <main class="flex-grow-1">
     <section class="container pt-5">
@@ -106,60 +126,135 @@
           </article>
         </div>
       </div>
-    </section>
 
-    <section class="container pt-5">
-      <h2 class="titulo-seccion">Tecnologías Backend</h2>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <article class="tarjeta-tema">
-            <h3>Lenguajes de servidor: Python, PHP, Java</h3>
-            <p>Este lenguaje será el encargado de llevar toda la lógica de negocio de la aplicación y de interactuar con la base de datos para realizar las peticiones de información necesarias.</p>
-            <p>También controlará a nivel de permisos si un usuario está autorizado a hacer la acción que intenta, si puede ver dichos datos, etc.</p>
-            <div class="card card-row" style="max-width: 450px;">  
-              <img src="Pic/py-java-php.png" class="card-img-start" alt="">
-              <div class="card-body">
-                <h3 class="card-title">Lenguajes de servidor: Python, PHP, Java</h3>
-                <p class="card-text">Este lenguaje será el encargado de llevar toda la lógica de negocio de la aplicación y de interactuar con la base de datos para realizar las peticiones de información necesarias.</p>
-                <p class="card-text">También controlará a nivel de permisos si un usuario está autorizado a hacer la acción que intenta, si puede ver dichos datos, etc.</p>
+      <!-- Columna Central: Content (8 de 12 columnas) -->
+      <div class="col-8 bg-light-gray border-custom border-top-0 border-bottom-0 center-text">
+        <main class="flex-grow-1">
+          <section class="container pt-5">
+            <h2 class="titulo-seccion">Tecnologías Frontend</h2>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>HTML</h3>
+                  <p>Es el responsable de estructurar la información de forma correcta para que pueda ser mostrada.</p>
+                  <p>Nació casi junto con internet y, hasta la fecha, solo ha ido mejorando para abarcar más formas de
+                    presentación y uso.</p>
+                  <p>¡OJO! HTML no es un lenguaje de programación, es un lenguaje de marcado y estructura de la
+                    información, como puede ser XML o JSON.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>CSS</h3>
+                  <p>Este lenguaje de marcas se utiliza para decirle al navegador cómo debe presentar la información
+                    indicada en el archivo HTML.</p>
+                  <p>CSS es el encargado de cómo presentar la información. Es muy importante en el desarrollo web
+                    separar la información de la presentación.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>JavaScript</h3>
+                  <p>El rey de la interactividad. JavaScript es el único lenguaje de programación que puede ser
+                    interpretado por nuestro navegador.</p>
+                  <p>Será el encargado de recoger los eventos que produce el usuario al interactuar con nuestra web y de
+                    comunicárselos al Backend.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>Framework Frontend</h3>
+                  <p>Al igual que en el backend, hay multitud de tareas repetitivas para casi cualquier aplicación web.
+                    Por eso existen frameworks de frontend que se encargan de manejar estas situaciones para no hacerlas
+                    desde cero cada vez.</p>
+                  <p>Hay para todos los gustos: ReactJS, VueJS, Angular, Svelte, Next… Escoge el que más te guste y
+                    estúdialo a fondo para tener el control del Front.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>Control de versiones: Git y GitHub</h3>
+                  <p>Es importante distinguir que Git es la herramienta de línea de comandos que gestiona los
+                    repositorios localmente, mientras que plataformas como GitHub, GitLab o Bitbucket son servicios en
+                    la nube que alojan estos repositorios para facilitar el almacenamiento centralizado y la
+                    colaboración en equipo.</p>
+                </article>
               </div>
             </div>
-          </article>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <article class="tarjeta-tema">
-            <h3>Bases de datos: SQL</h3>
-            <p>Hay dos vertientes muy diferenciadas: los sistemas de bases de datos relacionales, como MariaDB, MySQL o PostgreSQL, y los no relacionales, como MongoDB.</p>
-            <p>Estas últimas también se llaman bases de datos NoSQL o de clave-valor.</p>
-            <div class="card card-row" style="max-width: 450px;">  
-              <img src="Pic/sql-bd.webp" class="card-img-start" alt="">
-              <div class="card-body">          
-                <h3 class="card-title">Bases de datos: SQL</h3>
-                <p class="card-text">Hay dos vertientes muy diferenciadas: los sistemas de bases de datos relacionales, como MariaDB, MySQL o PostgreSQL, y los no relacionales, como MongoDB.</p>
-                <p class="card-text">Estas últimas también se llaman bases de datos NoSQL o de clave-valor.</p>
+          </section>
+
+          <section class="container pt-5">
+            <h2 class="titulo-seccion">Tecnologías Backend</h2>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>Lenguajes de servidor: Python, PHP, Java</h3>
+                  <p>Este lenguaje será el encargado de llevar toda la lógica de negocio de la aplicación y de
+                    interactuar con la base de datos para realizar las peticiones de información necesarias.</p>
+                  <p>También controlará a nivel de permisos si un usuario está autorizado a hacer la acción que intenta,
+                    si puede ver dichos datos, etc.</p>
+                </article>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <article class="tarjeta-tema">
+                  <h3>Bases de datos: SQL</h3>
+                  <p>Hay dos vertientes muy diferenciadas: los sistemas de bases de datos relacionales, como MariaDB,
+                    MySQL o PostgreSQL, y los no relacionales, como MongoDB.</p>
+                  <p>Estas últimas también se llaman bases de datos NoSQL o de clave-valor.</p>
+                </article>
               </div>
             </div>
-          </article>
-        </div>
+          </section>
+
+          <section class="container py-5">
+            <h2 class="titulo-seccion">Ejemplos de Proyectos</h2>
+            <ul class="proyectos">
+              <li>Juego de las tres en raya</li>
+              <li>Calculadora básica</li>
+              <li>Un blog de noticias</li>
+              <li>Web para consultar el tiempo usando una API externa</li>
+              <li>Portafolio de proyectos desarrollados</li>
+            </ul>
+          </section>
+        </main>
       </div>
-    </section>
 
-    <section class="container py-5">
-      <h2 class="titulo-seccion">Ejemplos de Proyectos</h2>
-      <ul class="proyectos">
-        <li>Juego de las tres en raya</li>
-        <li>Calculadora básica</li>
-        <li>Un blog de noticias</li>
-        <li>Web para consultar el tiempo usando una API externa</li>
-        <li>Portafolio de proyectos desarrollados</li>
-      </ul>
-    </section>
+      <!-- Columna Derecha: News (2 de 12 columnas) -->
+      <div class="col-2 bg-light-gray border-custom border-top-0 border-bottom-0 center-text">
+
+      </div>
+
+    </div>
   </main>
 
-  <div id="footer"></div>
-
+  <footer class="pie mt-auto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h5>Proyecto</h5>
+          <p class="mb-0">JAVAWOKIS_e-commerce</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5>Autores</h5>
+          <ul>
+            <li>Equipo JAVAWOKIS</li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5>Contacto</h5>
+          <ul>
+            <li><a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">&copy; 2026 MiSitio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
