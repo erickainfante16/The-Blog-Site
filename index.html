@@ -1,43 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap – Full Stack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
- <header class="navBarr">
-  <div class="navBarrContenedor">
-    <a href="index.html" class="navBarrLogo">Roadmap</a>
-    <button class="navBarrTogle" aria-level="Abrir menu" aria-expanded="false">
-      <span></span> <span></span> <span></span>
-    </button>
-    <nav class="navBarrMenu">
-      <a href="index.html">Inicio</a>
-      <a href="QuienesSomos.html">¿Quienes somos?</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
- </header>
+<body class="d-flex flex-column min-vh-100" data-pagina="index">
+  <div id="navbar"></div>
 
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <header class="hero">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-5">Full Stack <span>Developer</span></h1>
+          <p class="lead">Las tecnologías de frontend y backend que necesitas conocer para construir aplicaciones web completas.</p>
+        </div>
+        <div class="col-lg-6">
+          <img id="foto" src="Pic/full-stack-tenologies.jpeg" class="img-fluid rounded-4 shadow" alt="Tecnologías Full Stack">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow-1">
+    <section class="container pt-5">
+      <h2 class="titulo-seccion">Tecnologías Frontend</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>HTML</h3>
+            <p>Es el responsable de estructurar la información de forma correcta para que pueda ser mostrada.</p>
+            <p>Nació casi junto con internet y, hasta la fecha, solo ha ido mejorando para abarcar más formas de presentación y uso.</p>
+            <p>¡OJO! HTML no es un lenguaje de programación, es un lenguaje de marcado y estructura de la información, como puede ser XML o JSON.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>CSS</h3>
+            <p>Este lenguaje de marcas se utiliza para decirle al navegador cómo debe presentar la información indicada en el archivo HTML.</p>
+            <p>CSS es el encargado de cómo presentar la información. Es muy importante en el desarrollo web separar la información de la presentación.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>JavaScript</h3>
+            <p>El rey de la interactividad. JavaScript es el único lenguaje de programación que puede ser interpretado por nuestro navegador.</p>
+            <p>Será el encargado de recoger los eventos que produce el usuario al interactuar con nuestra web y de comunicárselos al Backend.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>Framework Frontend</h3>
+            <p>Al igual que en el backend, hay multitud de tareas repetitivas para casi cualquier aplicación web. Por eso existen frameworks de frontend que se encargan de manejar estas situaciones para no hacerlas desde cero cada vez.</p>
+            <p>Hay para todos los gustos: ReactJS, VueJS, Angular, Svelte, Next… Escoge el que más te guste y estúdialo a fondo para tener el control del Front.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>Control de versiones: Git y GitHub</h3>
+            <p>Es importante distinguir que Git es la herramienta de línea de comandos que gestiona los repositorios localmente, mientras que plataformas como GitHub, GitLab o Bitbucket son servicios en la nube que alojan estos repositorios para facilitar el almacenamiento centralizado y la colaboración en equipo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pt-5">
+      <h2 class="titulo-seccion">Tecnologías Backend</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>Lenguajes de servidor: Python, PHP, Java</h3>
+            <p>Este lenguaje será el encargado de llevar toda la lógica de negocio de la aplicación y de interactuar con la base de datos para realizar las peticiones de información necesarias.</p>
+            <p>También controlará a nivel de permisos si un usuario está autorizado a hacer la acción que intenta, si puede ver dichos datos, etc.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="tarjeta-tema">
+            <h3>Bases de datos: SQL</h3>
+            <p>Hay dos vertientes muy diferenciadas: los sistemas de bases de datos relacionales, como MariaDB, MySQL o PostgreSQL, y los no relacionales, como MongoDB.</p>
+            <p>Estas últimas también se llaman bases de datos NoSQL o de clave-valor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="titulo-seccion">Ejemplos de Proyectos</h2>
+      <ul class="proyectos">
+        <li>Juego de las tres en raya</li>
+        <li>Calculadora básica</li>
+        <li>Un blog de noticias</li>
+        <li>Web para consultar el tiempo usando una API externa</li>
+        <li>Portafolio de proyectos desarrollados</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-<footer class="footer">
-  <p>Autor: Equipo JAVAWOKIS</p>
 
-  <p>
-    Contacto:
-    <a href="mailto:contacto@ejemplo.com">
-      contacto@ejemplo.com
-    </a>
-  </p>
-
-  <p>Proyecto: JAVAWOKIS_e-commerce</p>
-
-  <p class="copyright">
-    &copy; 2026 MiSitio. Todos los derechos reservados.
-  </p>
-</footer>
 </html>

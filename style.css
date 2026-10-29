@@ -1,5 +1,89 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
+:root {
+  --color-1: #0B132B;
+  --color-2: #1C2541;
+  --color-3: #3A506B;
+  --color-4: #5BC0BE;
+  --color-5: #6FFFE9;
+  --fondo: #f4f7fa;
+  --borde: #dde4ec;
+  --suave: #4b5b72;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--fondo);
+  color: var(--color-1);
+}
+
+/* ===== Navbar ===== */
+.barra { background: var(--color-1); border-bottom: 2px solid var(--color-4); }
+.barra .navbar-brand { color: var(--color-5); font-weight: 700; letter-spacing: .04em; }
+.barra .nav-link { color: rgba(255, 255, 255, .75); font-weight: 500; }
+.barra .nav-link:hover { color: var(--color-5); }
+.barra .nav-link.active { color: var(--color-5); box-shadow: inset 0 -2px 0 var(--color-4); }
+
+/* ===== Encabezados de página ===== */
+.hero { padding: 4rem 0; color: #fff; background: linear-gradient(135deg, var(--color-1), var(--color-2)); }
+.hero h1 { font-weight: 800; letter-spacing: -.02em; }
+.hero h1 span { color: var(--color-5); }
+.hero p { color: #cbd5e1; margin-bottom: 0; }
+.hero-sm { padding: 3rem 0; text-align: center; }
+
+/* ===== Secciones ===== */
+.titulo-seccion {
+  margin-bottom: 1.5rem; padding-left: .9rem;
+  font-size: 1.6rem; font-weight: 700;
+  border-left: 5px solid var(--color-4);
+}
+
+.tarjeta-tema {
+  height: 100%; padding: 1.5rem;
+  background: #fff; border: 1px solid var(--borde);
+  border-top: 4px solid var(--color-4); border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(11, 19, 43, .05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.tarjeta-tema:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(11, 19, 43, .1); }
+.tarjeta-tema h3 { margin-bottom: .75rem; font-size: 1.15rem; font-weight: 700; color: var(--color-3); }
+.tarjeta-tema p { margin-bottom: .75rem; color: var(--suave); font-size: .95rem; }
+.tarjeta-tema p:last-child { margin-bottom: 0; }
+
+.proyectos { padding: 0; list-style: none; display: grid; gap: .75rem; }
+.proyectos li {
+  padding: .9rem 1.2rem; background: #fff;
+  border: 1px solid var(--borde); border-left: 4px solid var(--color-4); border-radius: 10px;
+}
+
+/* ===== Quiénes somos ===== */
+.articulo { padding: 2rem; background: #fff; border: 1px solid var(--borde); border-radius: 16px; box-shadow: 0 4px 10px rgba(11, 19, 43, .05); }
+.articulo p { color: var(--suave); line-height: 1.75; }
+.destacado {
+  margin: 1.5rem 0 0; padding: 1.25rem 1.5rem;
+  font-weight: 600; color: #fff;
+  background: var(--color-2); border-left: 5px solid var(--color-5); border-radius: 10px;
+}
+
+/* ===== Contacto ===== */
+.tarjetas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.contacto-tarjeta {
+  display: flex; align-items: flex-start; gap: 16px; padding: 24px;
+  background: #fff; border: 1px solid var(--borde); border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(11, 19, 43, .05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.contacto-tarjeta:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(11, 19, 43, .1); }
+.icono-contenedor { display: flex; flex-shrink: 0; padding: 12px; color: var(--color-1); background: var(--color-5); border-radius: 12px; }
+.icono-contenedor svg { width: 24px; height: 24px; }
+.tarjeta-contenido h3 { margin-bottom: 4px; font-size: 1rem; font-weight: 600; }
+.contacto-link { color: var(--color-3); font-weight: 500; text-decoration: none; }
+.contacto-link:hover { color: var(--color-4); text-decoration: underline; }
+
+/* ===== Footer ===== */
+.pie { padding: 3rem 0 1.5rem; color: #cbd5e1; background: var(--color-1); border-top: 2px solid var(--color-4); }
+.pie h5 { margin-bottom: .75rem; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--color-5); }
+.pie ul { padding: 0; margin: 0; list-style: none; }
+.pie li { margin-bottom: .35rem; }
+.pie a { color: var(--color-4); text-decoration: none; }
+.pie a:hover { color: var(--color-5); }
+.pie hr { margin: 2rem 0 1rem; border-color: var(--color-3); opacity: .6; }
+.pie .copyright { margin: 0; text-align: center; font-size: .85rem; color: #94a3b8; }
