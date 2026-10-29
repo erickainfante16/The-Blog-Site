@@ -50,6 +50,7 @@ const footer = `
 
 document.getElementById("navbar").outerHTML = navbar;
 document.getElementById("footer").outerHTML = footer;
+document.getElementById("footer").outerHTML = footer;
 
 //Formulario
 const formulario = document.getElementById('formularioContacto');
