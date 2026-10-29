@@ -50,3 +50,23 @@ const footer = `
 
 document.getElementById("navbar").outerHTML = navbar;
 document.getElementById("footer").outerHTML = footer;
+document.getElementById("footer").outerHTML = footer;
+
+//Formulario
+const formulario = document.getElementById('formularioContacto');
+const alertaPlaceholder = document.getElementById('alertaContacto');
+
+if (formulario && alertaPlaceholder) {
+  formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    alertaPlaceholder.innerHTML = `
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Mensaje enviado
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+      </div>
+    `;
+
+    formulario.reset();
+  });
+}
